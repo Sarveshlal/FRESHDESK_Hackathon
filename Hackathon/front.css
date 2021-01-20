@@ -1,0 +1,20 @@
+.accordion{
+    font-family: 'Assistant', sans-serif;
+}
+#img:hover{
+    background-color: gray;
+}
+#up{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: rgb(214, 216, 191);
+}
+#top{
+    font-size: 40px; 
+    font-family: 'Acme', sans-serif; 
+    font-weight: bold;
+}
+.accordion-item{
+    background-color: whitesmoke;
+}

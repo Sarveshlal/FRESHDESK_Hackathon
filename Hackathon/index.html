@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="front.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Assistant&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="back.js"></script>
+
+    <div class="container-fluid p-4">
+        <div class="row" id="up">
+            <div class="col-12 p-4">
+                <p class="text-center"><span id="top">
+                        Freshdesk<span id="small" style="font-size: large;">Tickets</span>
+                    </span>
+                    &nbsp;
+                    <span><button type="button" class="btn btn-outline-dark">Get Started</button></span>
+                    <span><button type="button" class="btn btn-outline-dark"><img
+                                src="https://img.icons8.com/android/10/000000/plus.png" />New</button></span>
+                    <span><a href="#"><img src="https://img.icons8.com/carbon-copy/50/000000/bell--v1.png" /></a></span>
+                    <span><a href="#"><img
+                                src="https://img.icons8.com/carbon-copy/40/000000/gift.png" /></a></span>&nbsp;
+                    <span><a href="#"><img src="https://img.icons8.com/metro/26/000000/overtime.png" /></a></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1 text-center" style="background-color: rgb(0, 161, 0);">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><img
+                                src="https://img.icons8.com/material-rounded/40/000000/headphones.png" id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><img
+                                src="https://img.icons8.com/carbon-copy/50/000000/starred-ticket.png" id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">&nbsp;<img
+                                src="https://img.icons8.com/ios/40/000000/apple-contacts.png" id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img
+                                src="https://img.icons8.com/carbon-copy/50/000000/settings.png" id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="https://img.icons8.com/wired/50/000000/book.png"
+                                id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="https://img.icons8.com/carbon-copy/50/000000/graph.png"
+                                id="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="https://img.icons8.com/windows/50/000000/chatbot.png"
+                                id="img" /></a>
+                    </li>
+                    &nbsp;
+                </ul>
+            </div>
+            <div class="col-8">
+                <hr>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Add a Ticket
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping">Contact</span>
+                                            <input type="text" class="form-control" placeholder="Contact"
+                                                aria-label="Username" aria-describedby="addon-wrapping" name="contact"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">Subject</span>
+                                            <input type="text" class="form-control" placeholder="Subject"
+                                                aria-label="Username" aria-describedby="addon-wrapping" name="subject"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping">Type</span>
+                                            <select class="form-select" aria-label="Default select example" id="type"
+                                                name="Type">
+                                                <option value="Question" selected>Question</option>
+                                                <option value="Incident">Incident</option>
+                                                <option value="Problem">Problem</option>
+                                                <option value="Feature request"> Feature request</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">Source</span>
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="source">
+                                                <option value="3" selected>Phone</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping1">Status</span>
+                                            <select class="form-select" aria-label="Default select example" id="status"
+                                                name="status">
+                                                <option value="2" selected>Open</option>
+                                                <option value="3">Pending</option>
+                                                <option value="4">Resolved</option>
+                                                <option value="5"> Closed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping2">Priority</span>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="priority" name="priority">
+                                                <option value="1" selected>Low</option>
+                                                <option value="2" selected>Medium</option>
+                                                <option value="3">High</option>
+                                                <option value="4">Urgent</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping">Group</span>
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="group">
+                                                <option value="Account Manager" selected>Account Manager</option>
+                                                <option value="Billing">Billing</option>
+                                                <option value="Escalations">Escalations</option>
+                                                <option value="Project Management"> Project Management</option>
+                                                <option value="QA">QA</option>
+                                                <option value="Sales">Sales</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here"
+                                                id="floatingTextarea2" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2">Description</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-outline-primary" onclick="createdata()">Add
+                                    Ticket</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Update Contact and Status
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping">Enter ticket ID</span>
+                                            <input type="number" class="form-control" placeholder="Enter ticket ID"
+                                                aria-label="number" aria-describedby="addon-wrapping" id="ticketid"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping"> Contact Number</span>
+                                            <input type="number" class="form-control" placeholder="Contact No"
+                                                aria-label="number" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping">Status</span>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="statusdata">
+                                                <option value="2" selected>Open</option>
+                                                <option value="3">Pending</option>
+                                                <option value="4">Resolved</option>
+                                                <option value="5"> Closed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">Priority</span>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="prioritydata">
+                                                <option value="1" selected>Low</option>
+                                                <option value="2" selected>Medium</option>
+                                                <option value="3">High</option>
+                                                <option value="4">Urgent</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-secondary" onclick="updatedata()">Update
+                                    Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                View all Tickets
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" id="displayall">
+                                <button type="button" class="btn btn-outline-success" onclick="getdata()">View All
+                                    Updated Tickets</button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Ticket template
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio fugit et alias, voluptate porro laboriosam quisquam dolorum excepturi earum aut?</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container col col-sm-6 col-lg-12">
+                <div>
+                    <div class="text-center">
+                        <a href="www.instagram.com"><img
+                                src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" /></a>
+                        <a href="www.facebook.com"><img
+                                src="https://img.icons8.com/fluent/48/000000/facebook-new.png" /></a>
+                        <a href="mailto:sarveshlal99@gmail.com"><img
+                                src="https://img.icons8.com/fluent/48/000000/gmail--v2.png" /></a>
+                        <a href="https://github.com/Sarveshlal"><img
+                                src="https://img.icons8.com/ios-glyphs/48/000000/github.png" /></a>
+                    </div>
+                    <p class="copyright text-muted text-center">Copyright © 2021 All Rights
+                        Reserved.</p>
+                    <p class="copyright text-muted text-center">Developed by Sarveshlal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
